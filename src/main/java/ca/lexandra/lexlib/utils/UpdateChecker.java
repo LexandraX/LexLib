@@ -15,8 +15,8 @@ public class UpdateChecker {
     private final JavaPlugin plugin;
     private static int resourceId;
 
-    public static void checkUpdate() {
-        new UpdateChecker(LexLib.getPlugin(), 12345).getVersion(version -> {
+    public static void checkUpdate(int id) {
+        new UpdateChecker(LexLib.getPlugin(), id).getVersion(version -> {
             if (LexLib.getPlugin().getDescription().getVersion().equalsIgnoreCase(version)) {
                 Commons.log("There is not a new update available! Download it here: https://www.spigotmc.org/resources/" + UpdateChecker.resourceId);
             } else {
