@@ -1,0 +1,5 @@
+name: Lexlib
+version: ${project.version}
+main: ca.lexandra.lexlib.LexLib
+api-version: 1.16
+authors: [ Lexandra ]
